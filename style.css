@@ -1,14 +1,17 @@
 /* Global styles */
 :root {
     /* Color */
-    /* Font */
-    /* Margin */
+    --color-background       : #f8f5e9;
+    --color-font             : #394647;
+    --color-stock-card       : #cae0ef;
+    --color-stock-price-green: #589578;
+    --color-stock-price-red  : #982e2e;
 }
 
 html {
     box-sizing     : border-box;
     font-size      : 62.5%;
-    /* 62.5% -> 1em = 10px, 75% -> 1em = 12px */
+    /* 62.5% -> 1em = 10px*/
     scroll-behavior: smooth;
 }
 
@@ -19,39 +22,97 @@ html {
 }
 
 body {
-    margin     : 0 auto;
-    padding    : 0;
-    font-family: , sans-serif;
+    margin          : 0;
+    padding         : 0;
+    min-width       : 375px;
+    max-width       : 1024px;
+    font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color           : var(--color-font);
+    background-color: var(--color-background);
 }
 
 h1,
 h2,
 h3,
-ul,
+h4 {
+    margin     : 0 0 .75rem;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: .875rem;
+}
+
 p {
-    margin: 0;
+    margin   : 0 0 1.25rem;
+    font-size: .6rem;
 }
 
-ul {
-    padding   : 0;
-    list-style: none;
+.header {
+    margin    : 2rem auto;
+    width     : 70vw;
+    text-align: center;
 }
 
-a,
-a:active,
-a:focus,
-a:link,
-a:visited {
-    text-decoration: none;
+.seach-container,
+.stockcards-container {
+    width: 90vw;
 }
 
-img {
-    display: block;
-    width  : 100%;
-    height : auto;
+.seach-container {
+    display       : flex;
+    flex-direction: column;
+    margin        : 3rem auto;
+    width         : 55vw;
+}
+
+.search-form {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    width      : 100%;
+    font-family: inherit;
+}
+
+.fa-search {
+    color: var(--color-font);
+}
+
+.search-message {
+    height: 1.5rem;
+}
+
+.search-message p {
+    color: red;
 }
 
 /* Responsive design for mobile device and desktop */
 @media screen and (max-width:767px) {}
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        margin: 3rem auto;
+    }
+
+    .seach-container {
+        width: 40vw;
+    }
+}

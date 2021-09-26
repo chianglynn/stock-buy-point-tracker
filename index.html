@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Stock Buy Point</title>
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
@@ -14,9 +14,14 @@
 </head>
 
 <body class="body">
+    <header class="header">
+        <h1>Check Stock Buy Point</h1>
+        <h2>based on Moving-Average</h2>
+    </header>
+
     <section class="seach-container">
         <form class="search-form">
-            <input type="text" class="search-input">
+            <input type="text" placeholder="Please enter a stock symbol" class="search-input">
             <button type="submit" class="search-btn">
                 <i class="fas fa-search"></i>
             </button>
@@ -24,19 +29,32 @@
         <div class="search-message"></div>
     </section>
 
-    <main class="main-container">
-        <!-- <div class="stock-symbol">
-            <h1>Symbol</h1>
-        </div>
-        <div class="stock-price">
-            <div class="price">400.00</div>
-            <div class="currency">USD</div>
-            <div class="change">+12.00(+5.00%)</div>
-        </div>
-        <div class="moving-average">
-            <div class="ma240">400.00</div>
-            <div class="ma1200">400.00</div>
-            <div class="buy-in">Buy-In</div>
+    <main class="stockcards-container">
+        <!-- <div class="stock-card">
+            <div class="stock-symbol">
+                <h2>Symbol</h2>
+            </div>
+            <div class="stock-price">
+                <div class="price">
+                    <h2>400.00</h2>
+                </div>
+                <div class="currency">
+                    <h4>USD</h4>
+                </div>
+                <div class="change">
+                    <h4>+12.00(+5.00%)</h4>
+                </div>
+            </div>
+            <div class="moving-average">
+                <div class="ma240">
+                    <h4>MA240</h4>
+                    <h3>400.00</h3>
+                </div>
+                <div class="ma1200">
+                    <h4>MA1200</h4>
+                    <h3>400.00</h3>
+                </div>
+            </div>
         </div> -->
     </main>
 
