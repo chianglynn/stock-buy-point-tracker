@@ -1,5 +1,5 @@
 # stock-buy-point-tracker
- Stock Buy PointTracker
+ Stock Buy Point Tracker
 
  This is a side-project for checking stock buy point based on moving average.
 
