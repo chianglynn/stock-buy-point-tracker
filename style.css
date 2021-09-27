@@ -84,8 +84,16 @@ p {
 }
 
 .search-input {
-    width      : 100%;
-    font-family: inherit;
+    padding      : .5rem 1rem;
+    width        : 100%;
+    font-family  : inherit;
+    font-size    : .5rem;
+    border-radius: .25rem;
+}
+
+.search-btn {
+    border-radius   : .25rem;
+    background-color: var(--color-background);
 }
 
 .fa-search {
