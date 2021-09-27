@@ -136,6 +136,10 @@ p {
     background-color: var(--color-stock-card);
 }
 
+.stock-card:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
 .stock-info {
     display       : flex;
     flex-direction: column;
