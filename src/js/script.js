@@ -140,7 +140,7 @@ const getAllStocksDataAndRenderCards = async (stocks) => {
         const currency = meta.currency;
         const symbol = meta.symbol;
         const historyPrice = indicators.quote[0].close;
-        const lastestPrice = meta.regularMarketPrice;
+        const lastestPrice = meta.regularMarketPrice.toFixed(2);
         const previousPrice = historyPrice[historyPrice.length - 2].toFixed(2);
         const change = lastestPrice - previousPrice;
         const changeIcon = change > 0 ? '+' : '';
