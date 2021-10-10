@@ -80,7 +80,7 @@ a:link:hover {
 
 /* Header */
 .header {
-    margin    : 4rem auto;
+    margin    : 4rem auto 0;
     width     : 70vw;
     text-align: center;
 }
@@ -237,7 +237,7 @@ a:link:hover {
     }
 
     .header {
-        margin: 6rem auto;
+        margin: 6rem auto 0;
     }
 
     .seach-container {
@@ -265,6 +265,10 @@ a:link:hover {
 }
 
 @media screen and (min-width:832px) {
+    .stock-symbol {
+        margin-right: 4rem;
+    }
+
     .stock-price {
         flex-direction: row;
     }
