@@ -43,6 +43,7 @@ Users should be able to:
 - Flexbox, GRID
 - Mobile-first workflow
 - JavaSrcipt
+- Web API(LocalStorage, Fetch)
 
 ## Author
 
