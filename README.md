@@ -54,4 +54,4 @@ Users should be able to:
 
 ## Other Notes
 
-- Suggest to use chrome widget: [CORS Unblock](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino/related) for solving the CORS error.
+- Suggest using chrome widget: [CORS Unblock](https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino/related) for solving the CORS error.
