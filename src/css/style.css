@@ -121,6 +121,7 @@ a:link:hover {
     border-top-right-radius   : .25rem;
     border-bottom-right-radius: .25rem;
     background-color          : var(--color-background);
+    cursor                    : pointer;
 }
 
 .fa-search {
