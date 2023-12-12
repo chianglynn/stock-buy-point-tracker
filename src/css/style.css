@@ -1,68 +1,69 @@
 /* Global styles */
 :root {
-    /* Color */
-    --color-background       : #f8f5e9;
-    --color-font             : #394647;
-    --color-stock-card       : #d7e7f1;
-    --color-stock-price-green: #589578;
-    --color-stock-price-red  : #b33e3e;
-    --color-ma-red           : #d62424;
+  /* Color */
+  --color-background: #f8f5e9;
+  --color-font: #394647;
+  --color-stock-card: #d7e7f1;
+  --color-stock-price-green: #589578;
+  --color-stock-price-red: #b33e3e;
+  --color-ma-red: #d62424;
 
-    /* Border */
-    --border: 1px solid var(--color-font);
+  /* Border */
+  --border: 1px solid var(--color-font);
 }
 
 html {
-    box-sizing     : border-box;
-    font-size      : 62.5%;
-    /* 62.5% -> 1em = 10px*/
-    scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 62.5% -> 1em = 10px*/
+  scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    padding         : 0;
-    margin          : 0 auto;
-    min-width       : 375px;
-    max-width       : 1024px;
-    font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    color           : var(--color-font);
-    background-color: var(--color-background);
+  padding: 0;
+  margin: 0 auto;
+  min-width: 375px;
+  max-width: 1024px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--color-font);
+  background-color: var(--color-background);
 }
 
 h1,
 h2,
 h3,
 h4 {
-    padding    : 0;
-    margin     : 0;
-    line-height: 1.25;
+  padding: 0;
+  margin: 0;
+  line-height: 1.25;
 }
 
 h1 {
-    font-size: 2.4rem;
+  font-size: 2.6rem;
 }
 
 h2 {
-    font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+  font-size: 1.7rem;
 }
 
 h4 {
-    font-size: .875rem;
+  font-size: 1.2rem;
 }
 
 p {
-    margin   : 0 0 1.25rem;
-    font-size: .6rem;
+  margin: 0 0 1.25rem;
+  font-size: 0.6rem;
 }
 
 a,
@@ -70,207 +71,207 @@ a:active,
 a:focus,
 a:link,
 a:visited {
-    color          : var(--color-font);
-    text-decoration: none;
+  color: var(--color-font);
+  text-decoration: none;
 }
 
 a:link:hover {
-    opacity: .8;
+  opacity: 0.8;
 }
 
 /* Header */
 .header {
-    margin    : 4rem auto 0;
-    width     : 70vw;
-    text-align: center;
+  margin: 4rem auto 0;
+  width: 70vw;
+  text-align: center;
 }
 
 .header h1,
 .header h2 {
-    margin: 0 0 .75rem;
+  margin: 0 0 0.75rem;
 }
 
 /* Search */
 .seach-container {
-    display       : flex;
-    flex-direction: column;
-    margin        : 3rem auto;
-    width         : 55vw;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem auto;
+  width: 55vw;
 }
 
 .search-form {
-    display        : flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-input {
-    padding                  : .5rem 1rem;
-    width                    : 100%;
-    font-family              : inherit;
-    font-size                : .5rem;
-    border                   : var(--border);
-    border-top-left-radius   : .25rem;
-    border-bottom-left-radius: .25rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.5rem;
+  border: var(--border);
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .search-btn {
-    border                    : none;
-    border-top                : var(--border);
-    border-right              : var(--border);
-    border-bottom             : var(--border);
-    border-top-right-radius   : .25rem;
-    border-bottom-right-radius: .25rem;
-    background-color          : var(--color-background);
-    cursor                    : pointer;
+  border: none;
+  border-top: var(--border);
+  border-right: var(--border);
+  border-bottom: var(--border);
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  background-color: var(--color-background);
+  cursor: pointer;
 }
 
 .fa-search {
-    color: var(--color-font);
+  color: var(--color-font);
 }
 
 .search-message {
-    height: 1.5rem;
+  height: 1.5rem;
 }
 
 .search-message p {
-    color: red;
+  color: red;
 }
 
 /* Stock card */
 .stockcards-container {
-    margin: 0 auto;
-    width : 80vw;
+  margin: 0 auto;
+  width: 80vw;
 }
 
 .stock-card {
-    display         : flex;
-    flex-direction  : column;
-    padding         : 2.5rem;
-    border-radius   : .5rem;
-    background-color: var(--color-stock-card);
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-stock-card);
 }
 
 .stock-card:not(:last-child) {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .stock-info {
-    display       : flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .stock-symbol {
-    margin: auto 0;
-    width : 10rem;
+  margin: auto 0;
+  width: 10rem;
 }
 
 .stock-price {
-    display    : flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .price {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 .green {
-    color: var(--color-stock-price-green);
+  color: var(--color-stock-price-green);
 }
 
 .red {
-    color: var(--color-stock-price-red);
+  color: var(--color-stock-price-red);
 }
 
 .moving-average {
-    display              : grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap                  : 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .moving-average h4 {
-    margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .ma240,
 .ma1200 {
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
-    padding         : 1rem 2rem;
-    width           : 100%;
-    border-radius   : .5rem;
-    background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: var(--color-background);
 }
 
 .buy-point {
-    color: var(--color-ma-red);
+  color: var(--color-ma-red);
 }
 
 /* Responsive design for mobile device and desktop */
-@media screen and (max-width:575px) {
-    .stock-symbol {
-        margin-bottom: 2rem;
-    }
+@media screen and (max-width: 575px) {
+  .stock-symbol {
+    margin-bottom: 2rem;
+  }
 }
 
-@media screen and (min-width:576px) {
-    .stock-info {
-        display        : flex;
-        flex-direction : row;
-        justify-content: space-between;
-    }
+@media screen and (min-width: 576px) {
+  .stock-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .stock-price {
-        align-self: flex-start;
-    }
+  .stock-price {
+    align-self: flex-start;
+  }
 }
 
-@media screen and (max-width:767px) {
-    .stock-info {
-        margin-bottom: 2rem;
-    }
+@media screen and (max-width: 767px) {
+  .stock-info {
+    margin-bottom: 2rem;
+  }
 }
 
-@media screen and (min-width:768px) {
-    html {
-        font-size: 55%;
-    }
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 55%;
+  }
 
-    .header {
-        margin: 6rem auto 0;
-    }
+  .header {
+    margin: 6rem auto 0;
+  }
 
-    .seach-container {
-        width: 40vw;
-    }
+  .seach-container {
+    width: 40vw;
+  }
 
-    .stockcards-container {
-        width    : 70vw;
-        max-width: 70rem;
-    }
+  .stockcards-container {
+    width: 70vw;
+    max-width: 70rem;
+  }
 
-    .stock-card {
-        flex-direction : row;
-        justify-content: space-between;
-    }
+  .stock-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .stock-symbol {
-        margin-right: 5rem;
-    }
+  .stock-symbol {
+    margin-right: 5rem;
+  }
 
-    .stock-price {
-        flex-direction: column;
-        margin        : auto 0;
-    }
+  .stock-price {
+    flex-direction: column;
+    margin: auto 0;
+  }
 }
 
-@media screen and (min-width:832px) {
-    .stock-symbol {
-        margin-right: 4rem;
-    }
+@media screen and (min-width: 832px) {
+  .stock-symbol {
+    margin-right: 4rem;
+  }
 
-    .stock-price {
-        flex-direction: row;
-    }
+  .stock-price {
+    flex-direction: row;
+  }
 }
